@@ -1,0 +1,24 @@
+.radisson{
+    height:500px;
+    width:500px;
+    
+}
+
+#radisson{
+    background:rgb(132,136,139);
+    width:50%;
+    height:20%;
+    margin:2% auto;
+}
+
+#customer{
+    margin:2%;
+}
+
+#traffic{
+    border:1px solid black;
+    border-radius:5px;
+    padding:1% 2%;
+    margin:2%;
+
+}
