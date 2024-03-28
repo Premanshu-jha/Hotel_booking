@@ -4,6 +4,7 @@
 
 
 
+
 section{
 
     height:380px;
@@ -14,7 +15,13 @@ section{
     background-repeat:no-repeat;
 
     background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
+
+
 
 
 #citys{
@@ -29,5 +36,23 @@ section{
     width:150px;
     padding:4%;
     border-radius:25%;
+}
+
+input{
+    border:1px solid transparent;
+    background:#f1f1f1;
+    border-radius:12px;
+    width:20%;
+    height:10%;
+
+}
+
+
+#view{
+
+    display:flex;
+    justify-content:center;
+    text-decoration:none;
+    color:black;
 }
 
