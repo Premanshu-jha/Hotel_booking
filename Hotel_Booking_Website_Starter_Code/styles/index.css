@@ -36,6 +36,8 @@ section{
     width:150px;
     padding:4%;
     border-radius:25%;
+    filter:drop-shadow(10px 10px 10px grey);
+
 }
 
 input{
@@ -44,8 +46,11 @@ input{
     border-radius:12px;
     width:20%;
     height:10%;
+    outline:none;
 
 }
+
+
 
 
 #view{
@@ -55,4 +60,69 @@ input{
     text-decoration:none;
     color:black;
 }
+
+
+
+#citys{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10%;
+}
+
+.image-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    
+}
+
+.location{
+    opacity:0;
+    position:absolute;
+    bottom:27%;
+ }
+
+.layer{
+    height:150px;
+    width:150px;
+    border-radius:25%;
+    background:black;
+    opacity:0;
+    position:absolute;
+    bottom:16.5%;
+}
+
+ 
+
+.image-container:hover  .location{
+
+    opacity:1;
+    color:white;
+    cursor:pointer;
+    
+}
+
+
+.image-container:hover  .layer{
+
+    opacity:0.5;
+    cursor:pointer;
+   
+}
+
+
+#first{
+    margin-left:2%;
+    margin-bottom:0.2%;
+    position:absolute;
+    left:17.2%;
+}
+
+
+
+
+
+
+
 

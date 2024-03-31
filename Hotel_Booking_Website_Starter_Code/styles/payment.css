@@ -1,24 +1,55 @@
 .radisson{
-    height:500px;
-    width:500px;
+    height:300px;
+    width:270px;
     
 }
 
-#radisson{
-    background:rgb(132,136,139);
-    width:50%;
-    height:20%;
-    margin:2% auto;
+
+
+#radisson-details{
+    background:lightgray;
+    height:300px;
+    width:500px;
+    
 }
 
 #customer{
     margin:2%;
 }
 
-#traffic{
-    border:1px solid black;
-    border-radius:5px;
-    padding:1% 2%;
-    margin:2%;
-
+#radisson{
+    display:flex;
+    width:700px;
+    height:300px;
+    margin:2% auto;
 }
+
+#radisson-content{
+ margin-left:2%;
+}
+
+
+
+
+
+#payment-details{
+    display:flex;
+    justify-content:center;
+    
+    background:rosybrown;
+    border-radius:5px;
+    gap:10%;
+    margin:2% 2% 4% 2%;
+}
+
+#traffic{
+    margin-top:4%;
+}
+
+#payment{
+    margin-top:4%;
+}
+
+
+
+
