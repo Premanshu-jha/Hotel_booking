@@ -28,12 +28,36 @@ ul{
     display:flex;
     gap:2%;
     justify-content:center;
+    margin-top:2%;
 }
 
-li > a{
-    text-decoration:none;
-    color:black;
+li{
+    cursor:pointer;
 }
+
+.cards > a{
+    color:black;
+    text-decoration:none;
+
+}
+
+#list{
+    background:aqua;
+    padding:0.5%;
+    border-radius:10%;
+}
+
+
+.cards:hover{
+    background:rosybrown;
+}
+
+
+
+
+
+
+
 
 
 

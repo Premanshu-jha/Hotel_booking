@@ -98,6 +98,34 @@ html{
 
 
 
+#model{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+#model input{
+    margin:5%;
+    width:60%;
+    border-radius:0%;
+    border:1px solid black;
+}
+
+
+#modelf{
+    display:flex;
+    justify-content:center;
+}
+
+input[type="email"]{
+    width:60%;
+    border-radius:0%;
+    border:1px solid black;  
+}
+
+
 
 
 

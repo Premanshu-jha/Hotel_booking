@@ -7,6 +7,19 @@ border-top: 16px solid #444444;
 border-radius: 50%;
 width: 120px;
 height: 120px;
+animation:rotate 1s linear infinite;
+}
+
+
+@keyframes rotate{
+
+    0%{
+        transform:rotate(0);
+    }
+
+    100%{
+        transform:rotate(360deg);
+    }
 
 }
 
