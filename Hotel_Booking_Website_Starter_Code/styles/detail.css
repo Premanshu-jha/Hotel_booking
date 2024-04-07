@@ -1,7 +1,9 @@
 
-.radisson{
-    height:350px;
-    width:400px;
+#carouselExample{
+    height:390px;
+    width:450px;
+    margin:4% auto
+    
   
 }
 
@@ -14,14 +16,11 @@
 #image-div{
   height:400px;
   width:900px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
   border:1px solid black;
   margin-left:2%;
 }
 
-form{
+#payment{
   border:1px solid black;
   border-left:none;
   height:400px;
@@ -38,7 +37,14 @@ form{
   display:flex;
   justify-content:center;
   margin-right:2%;
+  
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(0.75) sepia(1) saturate(5) hue-rotate(15deg);
+}
+
 
 
 

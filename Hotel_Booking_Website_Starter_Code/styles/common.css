@@ -53,6 +53,7 @@ html{
     top:0;
     position:fixed;
     width:100%;
+    z-index:2;
    
 }
 
@@ -127,6 +128,9 @@ input[type="email"]{
 
 
 
-
+.checked {
+    color: orange; /* color for checked stars */
+  }
+  
 
 
