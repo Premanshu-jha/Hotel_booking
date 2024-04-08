@@ -22,8 +22,6 @@ section{
 }
 
 
-
-
 #citys{
 
     margin-left:15%;
@@ -49,10 +47,6 @@ input{
     outline:none;
 
 }
-
-
-
-
 #view{
 
     display:flex;
@@ -60,7 +54,6 @@ input{
     margin-top:3%;
     margin-bottom:4%;
 }
-
 
 
 #citys{
@@ -113,23 +106,67 @@ input{
    
 }
 
-
 #first{
     margin-left:2%;
     margin-bottom:0.2%;
     position:absolute;
-    left:17.8%;
+    left:23%;
     top:68%;
 }
 
 
 
 
+@media (min-width: 1200px) {
+    /* Adjust styles for larger screens if needed. For instance: */
+    #citys {
+      gap: 5%; /* Smaller gaps for more images per row */
+    }
+  }
 
 
 
+  @media (min-width: 768px) and (max-width: 1199px) {
+    
+  
+    .locations {
+      height: 120px;
+      width: 120px; /* Reduce size of city images */
+    }
+  }
+  
+
+  @media (max-width: 575px) {
+    
+  
+    #citys {
+      flex-wrap: wrap; /* Allow city images to wrap to multiple lines */
+      margin-left: 5%; 
+      margin-right: 5%;
+    }
+  
+    .image-container {
+      margin-bottom: 15px; /* Add spacing below images */
+    }
+  }
+
+
+  @media (min-width: 576px) and (max-width: 767px) { 
+    
+  
+    /* Fix hover issue for .layer on smaller devices */
+    .image-container:hover .layer {
+      transform: translateY(-20%);  /* Adjust translateY value as needed */
+    }
+  }
 
 
 
-
+  @media (min-width: 768px) and (max-width: 1199px) {
+  
+    /* Fix hover issue for .layer on tablets */
+    .image-container:hover .layer {
+      transform: translateY(-10%);  /* Adjust translateY value as needed */
+    }
+  }
 

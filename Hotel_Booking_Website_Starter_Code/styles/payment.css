@@ -52,4 +52,49 @@
 
 
 
+@media (min-width: 768px) and (max-width: 1199px) {
+    #radisson-details { 
+        width: 400px; /* Adjust width if needed */
+    }
+
+    #payment-details {
+        flex-direction: column; /* Stack items vertically if space is limited */
+        align-items: center;
+    }
+}
+
+/* Smaller tablets and large phones */
+@media (min-width: 576px) and (max-width: 767px) {
+    #radisson {
+        flex-direction: column; /* Stack the image and content  */
+        
+    }
+
+    #radisson-details {
+        width: 80%; /* Adjust as needed */
+    }
+}
+
+/* Smartphones (portrait) */
+@media (max-width: 575px) {
+    #radisson {
+        width: 90%;
+        display:flex;
+        flex-direction:column; /* Make the image section take up most of the width */
+    }  
+
+    #payment-details {
+        flex-direction: column;
+    }
+
+    #customer, #traffic, #payment {
+       margin-top: 2%; /* Adjust spacing as needed */
+    }
+
+    #content{
+        display:flex;
+        flex-direction:column;
+        gap:50px;
+    }
+}
 

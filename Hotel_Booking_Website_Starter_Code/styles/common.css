@@ -134,3 +134,52 @@ input[type="email"]{
   
 
 
+
+
+  
+  
+  /* Tablets in landscape mode */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    #footer, #header {
+      padding: 10px; /* Reduce padding for smaller viewports */
+    }
+
+  }
+  
+  /* Smaller tablets and large phones */
+  @media (min-width: 576px) and (max-width: 767px) { 
+    .logo {
+      height: 50px;
+      width: 50px; 
+    }
+  
+    section {
+      height: 300px; /* Adjust section height for smaller screens */
+    }
+  }
+  
+  /* Smartphones (portrait) */
+  @media (max-width: 575px) {
+    #header{
+      flex-direction: row;
+      justify-content:space-between; /* Stack header/footer content vertically */
+      align-items: center;
+    
+
+    }
+
+    #footer{
+
+      flex-direction:row;
+      justify-content:space-evenly;
+      align-items:center;
+    }
+
+    
+
+  
+    #login, #contact, #medias {
+      margin: 10px 0; /* Spacing between elements in the stacked layout */ 
+    }
+
+}

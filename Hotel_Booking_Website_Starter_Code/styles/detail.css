@@ -46,7 +46,67 @@
 }
 
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  #carouselExample {
+      width: 95%; /* Adjust carousel width for better fit */
+      margin: 3% auto; /* Adjust margins slightly */
+  }
+
+  #image-div {
+      width: 85%;
+  }
+
+  #payment {
+      width: 90%; 
+  }
+}
+
+/* Media Queries for Smaller Tablets and Large Phones */
+@media (max-width: 767px) {
+  #booking {
+      display: flex; /* Ensure flexbox for side-by-side layout */
+      flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
+      justify-content: space-around; /* Distribute space */
+  }
+
+  #image-div {
+      width: 47%; /* Adjust width as needed for balance */
+      margin-bottom: 20px; /* Add spacing for better separation */
+  }
+
+  #payment {
+      width: 47%; /* Adjust width as needed for balance */
+      padding: 10px; /* Add padding for better spacing */
+  }
+
+  #payment section { 
+      display: block; /* Ensure headings are visible */
+  }
+
+  #payment button { /* Style and position the button */
+      width: 100%; /* Full width of the form container */
+      margin-top: 10px; /* Add some top margin */
+  }
+}
+
+/* Smartphones (portrait) */
+@media (max-width: 575px) {
+
+ 
 
 
+  #image-div {
+      width: 100%; /* Full width on small screens */
+      margin-bottom: 10px;
+      border:none; /* Reduce spacing */
+  }
 
+  #payment {
+      width: 100%;
+      border:none; /* Full width on small screens */
+  }
 
+  #payment button {
+      margin-top: 15px; /* Adjust margin for smaller viewports */
+  }
+}

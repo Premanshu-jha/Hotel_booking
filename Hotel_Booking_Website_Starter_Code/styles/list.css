@@ -20,7 +20,6 @@
     display:flex;
     flex-wrap:wrap;
     gap:5%;
-
 }
 
 ul{
@@ -51,6 +50,49 @@ li{
 .cards:hover{
     background:rosybrown;
 }
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .cards { 
+        width: 45%; 
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) { 
+    .cards {
+        width: 90%; 
+        margin: 2% auto; 
+        
+    }
+
+    #hotels {
+        flex-wrap: nowrap; 
+        overflow-x: auto; 
+    }
+}
+
+@media (max-width: 575px) {
+    .cards {
+        width: 95%; 
+        margin: 2% auto;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    #hotels {
+        flex-wrap: wrap; 
+        overflow-x: auto; 
+    }
+
+    #content {
+        margin-top: 15vh; /* Slightly larger margin for smaller screens */
+    }
+} 
 
 
 
