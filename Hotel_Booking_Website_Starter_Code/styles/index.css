@@ -1,7 +1,11 @@
 
 
 
-
+#content{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
 
 
 
@@ -22,11 +26,7 @@ section{
 }
 
 
-#citys{
 
-    margin-left:15%;
-    margin-right:15%;
-}
 
 
 .locations{
@@ -51,30 +51,41 @@ input{
 
     display:flex;
     justify-content:center;
+    align-items:center;
     margin-top:3%;
     margin-bottom:4%;
+    margin-right:4%;
 }
 
 
-#citys{
+.citys{
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:10%;
+    gap:60%;
+    
     margin-top:3%;
+    position:relative;
+    margin-bottom:2%;
+  
 }
+
+
+
+
 
 .image-container{
     display:flex;
     flex-direction:column;
     align-items:center;
+    margin-right:10%;
     
 }
 
 .location{
     opacity:0;
     position:absolute;
-    bottom:20%;
+    bottom:45%;
  }
 
 .layer{
@@ -84,8 +95,14 @@ input{
     background:black;
     opacity:0;
     position:absolute;
-    bottom:17.5%;
-    top:68%;
+    bottom:0;
+}
+
+#first{
+   
+  text-decoration:none;
+  color:white;
+
 }
 
  
@@ -106,22 +123,25 @@ input{
    
 }
 
-#first{
-    margin-left:2%;
-    margin-bottom:0.2%;
-    position:absolute;
-    left:23%;
-    top:68%;
+#allcitys{
+  display:flex;
+  flex-direction:column;
+  gap:10%;
 }
+
+
 
 
 
 
 @media (min-width: 1200px) {
     /* Adjust styles for larger screens if needed. For instance: */
-    #citys {
-      gap: 5%; /* Smaller gaps for more images per row */
+    .citys {
+      gap: 5%;
+      position:relative; /* Smaller gaps for more images per row */
     }
+
+
   }
 
 
@@ -139,25 +159,55 @@ input{
   @media (max-width: 575px) {
     
   
-    #citys {
+    .citys {
       flex-wrap: wrap; /* Allow city images to wrap to multiple lines */
       margin-left: 5%; 
       margin-right: 5%;
+      position:relative;
     }
+
+    .image-container{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      margin-bottom: 15px;
+      
+  }
   
-    .image-container {
-      margin-bottom: 15px; /* Add spacing below images */
+  
+
+    .image-container:hover .layer {
+      bottom:0;  /* Adjust translateY value as needed */
     }
+
+    .image-container:hover  .location{
+
+      opacity:1;
+      color:white;
+      cursor:pointer;
+      
+  }
+
+
   }
 
 
   @media (min-width: 576px) and (max-width: 767px) { 
     
-  
+    .citys {
+      flex-wrap: wrap; /* Allow city images to wrap to multiple lines */
+      margin-left: 5%; 
+      margin-right: 5%;
+      position:relative;
+    }
+
+    
     /* Fix hover issue for .layer on smaller devices */
     .image-container:hover .layer {
-      transform: translateY(-20%);  /* Adjust translateY value as needed */
+      bottom:0;  /* Adjust translateY value as needed */
     }
+
+
   }
 
 
@@ -165,8 +215,15 @@ input{
   @media (min-width: 768px) and (max-width: 1199px) {
   
     /* Fix hover issue for .layer on tablets */
+    .citys {
+      flex-wrap: wrap; /* Allow city images to wrap to multiple lines */
+      margin-left: 5%; 
+      margin-right: 5%;
+      position:relative;
+    }
+
     .image-container:hover .layer {
-      transform: translateY(-10%);  /* Adjust translateY value as needed */
+      bottom:0;  /* Adjust translateY value as needed */
     }
   }
 

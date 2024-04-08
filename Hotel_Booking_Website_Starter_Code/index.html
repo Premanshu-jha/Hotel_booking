@@ -18,21 +18,21 @@
             LOGIN
           </button></div>
 
-         
+     
    
          
     </div>
 
     <div id="content">
         <section><input type="text" placeholder="City"></section>
-         <div id="citys">
-            <a href="./list.html">   
+       
+         <div class="citys">
+               
         <div class="image-container">  
         <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="Delhi" class="locations">
-        <div class="layer" id="first"></div>
-        <div class="location">Delhi</div>
-    </div> 
-</a> 
+        <div class="layer" ></div>
+        <div class="location" ><a href='./list.html' id="first">Delhi</a></div>
+    </div>  
          <div class="image-container">
         <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" class="locations" alt="Goa">
         <div class="layer"></div>
@@ -49,10 +49,39 @@
         <div class="layer"></div>
         <div class="location">Kolkata</div>
     </div>
-        
-    </div>
+</div>
+
+<div class="citys">
+  
+<div class="image-container">  
+<img src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg" alt="Chennai" class="locations">
+<div class="layer"></div>
+<div class="location">Chennai</div>
+</div> 
+
+<div class="image-container">
+<img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg" class="locations" alt="Agra">
+<div class="layer"></div>
+<div class="location">Agra</div>
+</div>
+<div class="image-container">
+<img src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg" class="locations" alt="Jaipur">
+<div class="layer"></div>
+<div class="location">Jaipur</div>
+</div>
+
+<div class="image-container">
+<img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg" class="locations" alt="Bengaluru">
+<div class="layer"></div>
+<div class="location">Bengaluru</div>
+</div>
+
+</div>
+
+
+
     <div id="view">
-      <form action="./index.html">
+      <form action="./index.html" id="viewmore">
         <button type="submit" class="btn btn-secondary">View More</button>
       </form>
 
@@ -127,6 +156,8 @@
           </div>
         </div>
       </div>
+
+    <script href="./scripts/index.js"></script>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
 </body>
